@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <title>Practice Room</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width"> 
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/006717e367.js" crossorigin="anonymous"></script>
+        
+        <!--styles-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/styles.css">
+
+        <!--jquery-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
+        <!--vexflow-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vexflow/3.0.9/vexflow-min.js"></script>
+
+        <script src="scripts/audiosynth.js"></script>
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const scale = [
+                    { note: 'C',
+                    octave: 4 },
+                    {
+                        note: 'D',
+                        octave: 4
+                    },
+                    {
+                        note: 'E',
+                        octave: 4
+                    },
+                    {
+                        note: 'F',
+                        octave: 4
+                    },
+                    {
+                        note: 'G',
+                        octave: 4
+                    },
+                    {
+                        note: 'A',
+                        octave: 4
+                    },
+                    {
+                        note: 'B',
+                        octave: 4
+                    },
+                    {
+                        note: 'C',
+                        octave: 5
+                    },
+                ]
+
+                const body = document.querySelector('body');
+                const notes = document.querySelectorAll('i');
+                for (let i = 0; i < notes.length; i++) {
+                    notes[i].onclick = function() {
+                        Synth.play(0, scale[i].note, scale[i].octave, 2);
+                    }
+                }
+
+
+            })
+
+            
+        </script>        
+	</head>
+	<body>
+		<div id="landing">
+            <div id="landing-content">
+                <h1>
+                    Practice Room
+                </h1>
+                <div>
+                    <i class="fas fa-music notes"></i>
+                    <i class="fas fa-music notes"></i>
+                    <i class="fas fa-music notes"></i>
+                    <i class="fas fa-music notes"></i>
+                    <i class="fas fa-music notes"></i>
+                    <i class="fas fa-music notes"></i>
+                    <i class="fas fa-music notes"></i>
+                    <i class="fas fa-music notes"></i>
+                </div>
+                <h4>Music Theory Calculators and Games</h4>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-light" href="scale.html">Scale Calculator</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="interval.html">Interval Calculator</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="chord.html">Chord Calculator</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="note-id.html">Note Identification</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="eartraining.html">Interval Ear Training</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="guitar-shark.html">Guitar Shark</a></li>
+                </ul>
+            </div>
+        </div>
+	</body>
+</html>

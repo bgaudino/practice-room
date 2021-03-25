@@ -1,0 +1,260 @@
+$body-bg: #f0f8ff;
+$nav-bg: #6441a5;
+$nav-bg2: #2a0845;
+$nav-text: #ffffff;
+$body-text: #0e0b16;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $body-bg;
+    color: $body-text;
+    font-family: 'Indie Flower', sans-serif;
+    a {
+        color: $body-text;
+    }
+    a:hover {
+        color: $body-text;
+        text-decoration: underline;
+    }
+}
+
+#landing-content {
+    align-self: center;
+    margin: auto;
+    width: 100%;
+}
+
+.notes {
+    margin: 0 8px;
+}
+.notes:hover {
+    transform: scale(1.5);
+    color: red;
+    cursor: pointer;
+}
+
+#landing {
+    display: grid;
+    color: $nav-text;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, $nav-bg , $nav-bg2);
+}
+
+// navbar
+.nav {
+    background-image: linear-gradient(to right, $nav-bg , $nav-bg2);
+}
+.nav.navbar {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    background-color: $nav-bg;
+    a {
+        color: $nav-text
+    }
+    a:hover {
+        color: $nav-text;
+    }
+    color: $nav-text;
+
+}
+
+.nav.nav-tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+        color: $nav-text;
+    }
+    border: none;
+}
+
+.nav-item {
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+}
+
+.nav-item.active {
+    background-color: $body-bg;
+    border: 1px solid;
+    a {
+        color: $body-text;
+    }
+    border-top-color: black;
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+}
+
+#active-link {
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: $nav-bg;
+}
+
+iframe {
+    justify-self: center;
+    border: 1px solid $nav-text;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 20px;
+}
+
+//music game stuff
+.content {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.btn, .answer_btn {
+    width: fit-content;
+    min-width: 5em;
+    border: 1px solid black;
+    grid-column: 1 / span 2; 
+}
+
+.answer_btn {
+    background: $nav-bg;
+    color: $nav-text;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#intervalButtons {
+    display: flex;
+    flex-shrink: inherit;
+    justify-content: center;
+    margin: auto;
+}
+
+input {
+    width: fit-content;
+    justify-self: center;
+    margin: 4px;
+}
+
+.form-select {  
+    justify-self: center;
+    width:fit-content;
+    margin: 10px 4px;
+}
+
+
+.answer, .staff {
+    display: flex;
+    justify-content: center;
+}
+
+.staff {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.score {
+    width: 3em;
+}
+
+.staff {
+    border-radius: 12px;
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#shark {
+    width: 100vw;
+    height: 100vw;
+    padding: 10px;
+}
+
+#mobileTitle {
+    background-color: $nav-bg;
+    color: $nav-text;
+    margin: 0;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.cropped {
+    width: 600px; /* width of container */
+    height: 300px; /* height of container */
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 $nav-bg, 0 6px 20px 0 $nav-bg;
+    margin: 20px auto;
+}
+
+.cropped img {
+    margin: -10px 0px 0px -180px;
+    width: 100%;
+    margin: -50px auto;
+}
+
+@media (max-width: 1120px) {
+    #staff {
+        width: 400px;
+        margin: auto;
+    }
+
+    body {
+        text-align: center;
+    }
+    form {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        text-align: right;
+    }
+    .content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        margin: 0;
+    }
+    #intervalButtons {
+        flex-wrap: wrap;
+    }
+    .form-select {
+        width: 100%;
+    }
+    .btn-group, #gameScore {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sound {
+        visibility: hidden;
+    }
+    
+    .dropdown-item:hover {
+        background-color: $nav-bg;
+    }
+    .cropped {
+        width: 400px; /* width of container */
+        height: 200px; /* height of container */
+        overflow: hidden;
+        box-shadow: 0 4px 8px 0 $nav-bg, 0 6px 20px 0 $nav-bg;
+        margin: 20px auto;
+    }
+    
+    .cropped img {
+        width: 100%;
+        margin: -25px auto;
+    }
+}
+
