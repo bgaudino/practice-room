@@ -52,7 +52,7 @@
 
         <div class="content">
             <h2>Interval Ear Training</h2>
-            <form id="score" href="/eartraining" method="POST" hidden>
+            <form class="music-form" id="score" href="/eartraining" method="POST" hidden>
                 <h3 id="emoji">Score: </h3>
                 <input name="score" class="score" id="intervalNumCorrect" type="text" readonly>/
                 <input name="problems" class="score" id="intervalProblems" type="text" readonly>
@@ -62,7 +62,7 @@
             <div class="btn-group" id="intervalButtons" hidden></div>
             <br>
             <br>
-            <form onsubmit="intervalID(); return false">
+            <form class="music-form" onsubmit="intervalID(); return false">
                 <input id="range" type="range" min=1 max=13 value=13 onchange="intervalRange(); return false;">
                 <h4 id="intervalRange">P1 to P8</h4>
                 <select id="direction" class="form-select">
