@@ -15,6 +15,8 @@ const mobileTabs = `
             <li><a class="dropdown-item" href="guitar-shark.html">Guitar Shark</a></li>
         </ul>
     </li>
+    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
 </ul>`;
 
 let mql = window.matchMedia('(max-width: 960px)');

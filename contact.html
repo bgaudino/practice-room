@@ -25,32 +25,31 @@
         <div id="tabs">
             <ul class="nav nav-tabs">
                 <li class="nav-item"><a class="nav-link" href="scale.html">Scale Calculator</a></li>
-                <li class="nav-item active"><a class="nav-link" href="interval.html">Interval Calculator</a></li>
+                <li class="nav-item"><a class="nav-link" href="interval.html">Interval Calculator</a></li>
                 <li class="nav-item"><a class="nav-link" href="chord.html">Chord Calculator</a></li>
                 <li class="nav-item"><a class="nav-link" href="note-id.html">Note Identification</a></li>
                 <li class="nav-item"><a class="nav-link" href="eartraining.html">Interval Ear Training</a></li>
                 <li class="nav-item"><a class="nav-link" href="guitar-shark.html">Guitar Shark</a></li>
+                <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div id="mobileTabs"></div>
         <br>
         <h2>Contact Form</h2>
-        <div style="margin: auto; max-width: 900px;">
-        <label for="email" class="form-label">Name</label>
-        <div class="mb-3">
-            <form name="contact" method="POST" data-netlify="true">
+        <form style="max-width: 900px; margin: auto;" name="contact" method="POST" data-netlify="true">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
                 <input name="name" type="text" class="form-control" id="name" placeholder="Name">
-        </div>
-        <div class="mb-3">
+            </div>
+            <div class="mb-3">
                 <label for="email" class="form-label">Email Address</label>
                 <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
+            </div>
+            <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
                 <textarea name="message" class="form-control" id="message" rows="3" placeholder="Send us a message"></textarea>
-                <button class="btn btn-primary" type="submit">Send</button>
-            </form>
-        </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Send</button>
         </form>
     </body>
 </html>
