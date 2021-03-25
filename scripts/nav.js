@@ -12,7 +12,6 @@ const mobileTabs = `
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Games</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="note-id.html">Note Identification</a></li>
-            <li><a class="dropdown-item" href="eartraining.html">Interval Ear Training</a></li>
             <li><a class="dropdown-item" href="guitar-shark.html">Guitar Shark</a></li>
         </ul>
     </li>
