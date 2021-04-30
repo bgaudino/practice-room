@@ -66,7 +66,7 @@ function noteID() {
 
 function intervalID() {
     $('#score').attr('hidden', false);
-    $('#intervalFeedback').html('');
+    $('#intervalFeedback')('');
     $('#intervalButtons').attr('hidden', false);
     $('#again').attr('hidden', false);
     $('#intervalStart').attr('disabled', true);
